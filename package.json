@@ -1,0 +1,28 @@
+{
+  "name": "playwright-practice-bdd",
+  "version": "1.0.0",
+  "description": "Playwright BDD Automation Framework with TypeScript",
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:ui": "bddgen && playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "bdd",
+    "cucumber",
+    "typescript",
+    "testing",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.13.4",
+    "playwright-bdd": "^8.2.1",
+    "typescript": "^5.7.3"
+  }
+}

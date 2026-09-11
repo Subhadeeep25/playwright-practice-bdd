@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Playwright & BDD generated files
+.features-gen/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Environment and local configurations
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
