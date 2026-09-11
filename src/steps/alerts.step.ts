@@ -23,9 +23,10 @@ Then('cancel message should be displayed', async ({ alertsPage }) => {
     const text = await alertsPage.getResultMessage()
     expect(text).toContain('Cancel')
 })
-When('the user enters {string}', async ({ alertsPage }) => {
-    await alertsPage.enterPromptText("Automation Testing");
+When('the user enters {string}', async ({ alertsPage }, text: string) => {
+    await alertsPage.enterPromptText(text);
 })
 Then('entered text should be displayed', async ({ alertsPage }) => {
-    await alertsPage.getResultMessage();
+    const text = await alertsPage.getResultMessage();
+    expect(text).toContain('Automation Testing');
 })
